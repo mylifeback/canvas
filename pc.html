@@ -13,6 +13,19 @@
 </head>
 
 <body>
+  <pc-app>
+  <pc-scene>
+    <pc-entity name="camera" position="0 0 15">
+      <pc-camera></pc-camera>
+    </pc-entity>
+    <pc-entity name="light" rotation="45 45 0">
+      <pc-light type="directional"></pc-light>
+    </pc-entity>
+    <pc-entity name="sphere">
+      <pc-render type="sphere"></pc-render>
+    </pc-entity>
+  </pc-scene>
+  </pc-app>
   <script src="pc.js" type="module"></script>
 </body>
 </html>
