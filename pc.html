@@ -14,6 +14,7 @@
 
 <body>
   <pc-app>
+    <pc-asset src="rotate.mjs"></pc-asset>
   <pc-scene>
     <pc-entity name="camera" position="0 0 15">
       <pc-camera></pc-camera>
@@ -23,6 +24,14 @@
     </pc-entity>
     <pc-entity name="sphere">
       <pc-render type="sphere"></pc-render>
+    </pc-entity>
+    <pc-entity name="fast spinning cube">
+      <pc-render type="box"></pc-render>
+      <pc-scripts>
+        <pc-script name="rotateScript" attributes='{
+            "speed": 180
+        }'></pc-script>
+      </pc-scripts>
     </pc-entity>
   </pc-scene>
   </pc-app>
